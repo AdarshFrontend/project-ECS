@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="./losign.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#">Rare-<span>Esc</span></a>
+          </div>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./esc.html">Esc-things</a></li>
+            <li><a href="./issue.html">Issue</a></li>
+          </ul>
+          <div class="buttons">
+            
+            <a href="./losign.html" class="btn">login/signup</a>
+          </div>
+        </nav>
+    <div class="external"><section class="wrapper">
+        <div class="form signup">
+          <header>Signup</header>
+          <form action="#">
+            <input type="text" placeholder="Full name" required />
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <div class="checkbox">
+              <input type="checkbox" id="signupCheck" />
+              <label for="signupCheck">I accept all terms & conditions</label>
+            </div>
+            <input type="submit" value="Signup" />
+          </form>
+        </div>
+        <div class="form login">
+          <header>Login</header>
+          <form action="#">
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <a href="#">Forgot password?</a>
+            <input type="submit" value="Login" />
+          </form>
+        </div></section></div>
+        <div class="innerdiv">
+          <footer class="footer-distributed">
+           
+            <div class="footer-left">
+          
+              <h3><b class="bi">Rare-</b><b class="by">Esc</b><span>(Rare-Escape)</span></h3>
+          
+              <p class="footer-links">
+                <a href="./index.html">Home</a>
+                ·
+                <a href="./about.html">about</a>
+                ·
+                <a href="./esc.html">Esc-things</a>
+                ·
+                <a href="./issue.html">issue</a>
+              
+              </p>
+          
+              <p class="footer-company-name">Adarsh developer &copy; 2023</p>
+            </div>
+          
+            <div class="footer-center">
+          
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Hamirpur</span> Himachal Pradesh, India</p>
+              </div>
+          
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>WhatsApp=9882427493</p>
+              </div>
+          
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>Email=<a href="https://mail.google.com/?">akshurawal24@gmail.com</a></p>
+              </div>
+          
+            </div>
+          
+            <div class="footer-right">
+          
+              <p class="footer-company-about">
+                <span>About my website</span>
+                 I make this website for determine all those rare things that are rarely see in this world.
+              </p>
+          
+              <div class="footer-icons">
+                          <a href="https://www.facebook.com/adarshkumar.rawal"><i class="fa-brands fa-facebook"></i></a>
+                          <a href="https://www.linkedin.com/in/adarsh-kumar-7b76b1244"><i class="fa-brands fa-linkedin"></i></a>
+                          <a href="https://instagram.com/__a.d.a.r.s.h__002?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+              </div></footer></div>
+        <script>
+          const wrapper = document.querySelector(".wrapper"),
+            signupHeader = document.querySelector(".signup header"),
+            loginHeader = document.querySelector(".login header");
+          loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+          });
+          signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+          });
+        </script>
+      
+</body>
+</html>
